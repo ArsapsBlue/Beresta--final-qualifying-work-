@@ -1,0 +1,610 @@
+@charset "UTF-8";
+/*Файл для глобальных стилей и подключения блоков из других SCSS файлов*/
+/* Основные параметры */
+/* Шрифты */
+/* Цвета */
+/* Радиусы загругления */
+/* Тени */
+/* Общие стили */
+/* Фильтры */
+.filters {
+  width: 37rem;
+  height: 5rem;
+  padding: 0.9rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.9rem auto 2.1rem;
+}
+
+.filters__item {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  border: #ECECEC 0.5px solid;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  letter-spacing: -1px;
+  color: #8E8E92;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0.7rem 1.5rem;
+}
+
+.filters__indicator {
+  margin-left: 0.6rem;
+}
+
+.filters__indicator--position--right {
+  margin-right: 0.6rem;
+}
+
+/* Счетчик */
+.counter {
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 0.95rem;
+  background-color: #ECECEC;
+  color: #8E8E92;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.1rem;
+}
+
+.counter--type--red {
+  color: #FFFFFF;
+  background-color: #FF5C00;
+  margin-left: 0.8rem;
+}
+
+/* Задачи */
+.task {
+  width: 35rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2rem 2rem 1.7rem 3.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  margin: 0 auto 1.8rem;
+  border-radius: 1rem;
+  box-shadow: 1px 2px 10px 3px rgba(0, 0, 0, 0.04);
+}
+
+.task--small {
+  flex-direction: row;
+  align-items: center;
+}
+
+.task__heading {
+  display: -webkit-box;
+  width: 100%;
+  min-height: 2.5rem;
+  max-height: 4.8rem;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  -webkit-box-orient: vertical;
+}
+
+.task__heading--small-task {
+  width: 79%;
+}
+
+.task__bottom-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.task__bottom-block--small {
+  flex-direction: column;
+  width: 82%;
+}
+
+.task__details {
+  width: 68%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+}
+
+.task__members {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 1.7rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task__number-of-members {
+  display: inline-block;
+  margin-left: 1.55rem;
+}
+
+.task__desc-block {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
+  margin-top: 1.6rem;
+  text-overflow: ellipsis;
+}
+
+.task__desc-item {
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #8E8E92;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.task__desc-ico {
+  height: 1.4rem;
+  width: 1.4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.task__desc-ico--last {
+  margin-right: 0.234rem;
+}
+
+.task__desc-span {
+  margin-left: 1rem;
+  overflow: hidden;
+}
+
+.task__checkbox {
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: blur(0.5px);
+  border: #ECECEC solid 1px;
+  border-radius: 50%;
+  transition: filter ease-in 0.3s, background-color ease-in 0.3s;
+  background-color: #FFFFFF;
+  z-index: -50;
+}
+
+.task__checkbox:hover {
+  cursor: pointer;
+}
+
+.task__checkbox--active {
+  background-color: #D7F5BF;
+}
+.task__checkbox--active .task__check-ico {
+  width: 2rem;
+  height: 2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.task__checkbox--noactive:hover {
+  filter: none;
+  background-color: #fcfcfc;
+}
+
+.task__checkbox--big {
+  align-self: end;
+}
+
+/* Стак аватарок */
+.avatars-stack {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 1.671rem;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  padding: 0 0.1rem;
+}
+
+.avatars-stack__item {
+  width: 1.671rem;
+  height: 1.671rem;
+  border-radius: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: -0.4rem;
+}
+
+/* Различные кнопки и их параметры */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  line-clamp: 1;
+  border-radius: 1rem;
+}
+
+.active-button {
+  background-color: #D7F5BF;
+}
+
+.gray-button {
+  color: #8E8E92;
+}
+
+.gray-button__indicator {
+  margin-right: 1.5rem;
+}
+
+/* Основные меню */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 18.2rem;
+}
+
+.menu__item {
+  width: 100%;
+  height: 4.6rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.menu__item--enabled {
+  background-color: #D7F5BF;
+}
+
+.menu__item-indicator {
+  margin-right: 2rem;
+  height: 1.8rem;
+  width: 1.8rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* Кнопка профиль */
+.profile-button {
+  width: 19rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.profile-button__avatar {
+  margin-top: 0.3rem;
+  width: 4.1rem;
+  height: 4.1rem;
+  border-radius: 2.05rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profile-button__text-block {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 70%;
+  font-size: 1.7rem;
+}
+
+.profile-button__nickname {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* Мобильные стили (часть свойств присутствует в общем разделе в media запросах) */
+/* Шапка */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  width: 100%;
+  height: 6.2rem;
+  border-radius: 0 0 1.6rem 1.6rem;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+  z-index: 70;
+}
+
+.header__button {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header__button--type--menu {
+  width: 2rem;
+  height: 2rem;
+  background: url("media/mobile/header/header-button-menu.svg") no-repeat center;
+  background-size: contain;
+}
+
+.header__button--type--profile {
+  width: 2.6rem;
+  height: 2.6rem;
+  background: url("media/mobile/header/header-avatar1.png") no-repeat center;
+  background-size: cover;
+  border-radius: 1.3rem;
+}
+
+.header__button--type--project-select {
+  width: 24.3rem;
+  height: 2.8rem;
+  background-color: #D7F5BF;
+  border-radius: 1rem;
+  justify-content: space-around;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  line-clamp: 1;
+  padding: 0 1.4rem;
+}
+
+.header__span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Оверлей выбора проекта */
+/* Параметры боковых overlay */
+.side-overlay {
+  position: absolute;
+  top: 0;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  width: 26rem;
+  height: 100vh;
+  background-color: #FFFFFF;
+  transition: left 0.4s ease-in, right 0.4s ease-in;
+  z-index: 100;
+}
+
+.header-main-overlay {
+  position: absolute;
+  width: 39rem;
+  height: 22.9rem;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 1.6rem 1.6rem;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 2.2rem;
+  transition: top 0.4s ease-in;
+  z-index: 100;
+}
+
+.header-main-overlay__button {
+  width: 35rem;
+  height: 3.8rem;
+}
+
+.header-main-overlay--disabled {
+  top: -22.9rem;
+}
+
+.header-main-overlay--enabled {
+  top: 0;
+}
+
+/* Затенение при вызове overlay */
+.header-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: background-color 0.4s ease-out;
+}
+
+.header-background-overlay--disabled {
+  background-color: transparent;
+  z-index: -10;
+}
+
+.header-background-overlay--enabled {
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 90;
+}
+
+/* Левый overlay мобильной версии */
+/* Параметры боковых overlay */
+.side-overlay {
+  position: absolute;
+  top: 0;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  width: 26rem;
+  height: 100vh;
+  background-color: #FFFFFF;
+  transition: left 0.4s ease-in, right 0.4s ease-in;
+  z-index: 100;
+}
+
+.left-menu-overlay {
+  padding: 3rem 0 3rem 5rem;
+}
+
+.left-menu-overlay--enabled {
+  left: 0;
+}
+
+.left-menu-overlay--disabled {
+  left: -26rem;
+}
+
+.left-menu-overlay__logo {
+  width: 10.9rem;
+  margin-bottom: 0.1rem;
+  margin-left: 1.5rem;
+}
+
+.left-menu-overlay__version-desc {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 4rem;
+  margin-left: 1.5rem;
+}
+
+.left-menu-overlay__bottom-menu {
+  margin-top: 4rem;
+}
+
+/* Параметры боковых overlay */
+.side-overlay {
+  position: absolute;
+  top: 0;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  width: 26rem;
+  height: 100vh;
+  background-color: #FFFFFF;
+  transition: left 0.4s ease-in, right 0.4s ease-in;
+  z-index: 100;
+}
+
+/* Параметры боковых overlay */
+.side-overlay {
+  position: absolute;
+  top: 0;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  width: 26rem;
+  height: 100vh;
+  background-color: #FFFFFF;
+  transition: left 0.4s ease-in, right 0.4s ease-in;
+  z-index: 100;
+}
+
+.right-menu-overlay {
+  padding: 3rem 0 3rem 3rem;
+}
+
+.right-menu-overlay--enabled {
+  right: 0;
+}
+
+.right-menu-overlay--disabled {
+  right: -26rem;
+}
+
+/*Кнопка создать*/
+.create-button {
+  position: absolute;
+  bottom: 4rem;
+  left: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 14rem;
+  height: 6.2rem;
+  font-size: 1.5rem;
+  padding: 0 2.8rem 0 2.2rem;
+  background-color: #FFFFFF;
+  border-radius: 3.6rem;
+  box-shadow: 0px 0px 18.1px rgba(0, 0, 0, 0.13);
+  color: #8E8E92;
+}
+
+.create-button__indicator {
+  width: 1.857rem;
+  height: 1.95rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 0.9rem;
+}
+
+/* Глобальные основные параметры */
+* {
+  box-sizing: border-box;
+  font-family: Montserrat, Century Gothic, Corbel;
+  font-weight: 500;
+}
+
+span, p {
+  font-family: Montserrat, Century Gothic, Corbel;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  cursor: default;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}/*# sourceMappingURL=styles.css.map */

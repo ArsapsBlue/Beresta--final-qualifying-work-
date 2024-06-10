@@ -1,0 +1,15 @@
+
+@import '_side-overlay.scss';
+
+
+.right-menu-overlay {
+    padding: 3rem 0 3rem 3rem;
+}
+
+.right-menu-overlay--enabled {
+    right: 0;
+}
+
+.right-menu-overlay--disabled {
+    right: -$side-overlay-width;
+}

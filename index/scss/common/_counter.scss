@@ -1,0 +1,23 @@
+
+/* Счетчик */
+
+.counter {
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 0.95rem;
+    background-color: $gray1;
+    color: $gray2;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.1rem;
+}
+
+.counter--type--red {
+    color: #FFFFFF;
+    background-color: $event-red;
+    margin-left: 0.8rem;
+}
+

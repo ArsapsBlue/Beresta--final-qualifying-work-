@@ -1,0 +1,31 @@
+/* Основные меню */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 18.2rem;
+}
+
+.menu__item {
+    width: 100%;
+    height: 4.6rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: $button-border-radius1;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.menu__item--enabled {
+    background-color: $active-color1;
+}
+
+.menu__item-indicator {
+    margin-right: 2rem;
+    height: 1.8rem;
+    width: 1.8rem;
+    object-fit: contain;
+}

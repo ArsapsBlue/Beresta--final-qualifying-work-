@@ -1,0 +1,19 @@
+/* Параметры боковых overlay */
+
+
+$side-overlay-width: 26rem;
+
+.side-overlay {
+    position: absolute;
+    top: 0;
+    box-shadow: $main-inteface-box-shadow;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    width: $side-overlay-width;
+    height: 100vh;
+    background-color: #FFFFFF;
+    transition: left 0.4s ease-in, right 0.4s ease-in;
+    z-index: 100;
+}

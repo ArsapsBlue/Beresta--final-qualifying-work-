@@ -1,0 +1,25 @@
+/* Различные кнопки и их параметры */
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    line-clamp: 1;
+    border-radius: $button-border-radius1;
+}
+
+.active-button {
+    background-color: $active-color1;
+}
+
+.gray-button {
+    color: $gray2;
+}
+
+.gray-button__indicator {
+    margin-right: 1.5rem;
+}

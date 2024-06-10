@@ -1,0 +1,25 @@
+/*Кнопка создать*/
+
+.create-button {
+    position: absolute;
+    bottom: 4rem;
+    left: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 14rem;
+    height: 6.2rem;
+    font-size: 1.5rem;
+    padding: 0 2.8rem 0 2.2rem;
+    background-color: #FFFFFF;
+    border-radius: 3.6rem;
+    box-shadow: $create-button-box-shadow;
+    color: $gray2;
+}
+
+.create-button__indicator {
+    width: 1.857rem;
+    height: 1.95rem;
+    object-fit: contain;
+    margin-right: 0.9rem;
+}

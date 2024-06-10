@@ -1,0 +1,20 @@
+/* Затенение при вызове overlay */
+
+.header-background-overlay {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: background-color 0.4s ease-out;
+}
+
+.header-background-overlay--disabled {
+    background-color: transparent;
+    z-index: -10;
+}
+
+.header-background-overlay--enabled {
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 90;
+}

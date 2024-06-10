@@ -1,0 +1,149 @@
+/* Задачи */
+
+.task {
+    width: 35rem;
+    height: fit-content;
+    padding: 2rem 2rem 1.7rem 3.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    margin: 0 auto 1.8rem;
+    border-radius: $card-border-radius;
+    box-shadow: $card-box-shadow;
+}
+
+.task--small {
+    flex-direction: row;
+    align-items: center;
+}
+
+.task__heading {
+    display: -webkit-box;
+    width: 100%;
+    min-height: 2.5rem;
+    max-height: 4.8rem;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    //white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    -webkit-box-orient: vertical;
+}
+
+.task__heading--small-task {
+    width: 79%;
+}
+
+.task__bottom-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.task__bottom-block--small {
+    flex-direction: column;
+    width: 82%;
+
+}
+
+
+.task__details {
+    width: 68%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+}
+
+.task__members {
+    width: fit-content;
+    height: 1.7rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task__number-of-members {
+    display: inline-block;
+    margin-left: 1.55rem;
+}
+
+.task__desc-block {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    margin-top: 1.6rem;
+    text-overflow: ellipsis;
+}
+
+.task__desc-item {
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: $gray2;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+
+.task__desc-ico {
+    height: 1.4rem;
+    width: 1.4rem;
+    object-fit: cover;
+}
+
+.task__desc-ico--last {
+    margin-right: 0.234rem;
+}
+
+.task__desc-span {
+    margin-left: 1rem;
+    overflow: hidden;
+}
+
+.task__checkbox {
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: blur(0.5px);
+    border: $gray1 solid 1px;
+    border-radius: 50%;
+    transition: filter ease-in 0.3s, background-color ease-in 0.3s;
+    background-color: #FFFFFF;
+    z-index: -50;
+}
+
+.task__checkbox:hover {
+    cursor: pointer;
+}
+
+.task__checkbox--active {
+    background-color: $active-color1;
+    .task__check-ico {
+        width: 2rem;
+        height: 2rem;
+        object-fit: contain;
+    }
+}
+
+.task__checkbox--noactive:hover {
+    filter: none;
+    background-color: $graylight;
+}
+
+.task__checkbox--big {
+    align-self: end;
+}

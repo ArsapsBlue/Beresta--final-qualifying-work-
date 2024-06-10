@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Beresta</title>
+</head>
+<body>
+    <div class="create-button"><img src="media/mobile/create-button/plus-ico.svg" alt="+" class="create-button__indicator">Создать</div>
+    <div class="header-background-overlay header-background-overlay--disabled"></div>
+    <div class="side-overlay left-menu-overlay left-menu-overlay--disabled">
+        <img src="media/common/logo/beresta-logo-main.png" alt="" class="left-menu-overlay__logo">
+        <span class="left-menu-overlay__version-desc">Береста, версия 1.0</span>
+        <nav class="menu">
+            <ul>
+                <li><a class="menu__item menu__item--enabled" href="#"><img class="menu__item-indicator" src="media/mobile/left-menu-overlay/list-ico.svg">Список</a></li>
+                <li ><a class="menu__item" href="#"><img class="menu__item-indicator" src="media/mobile/left-menu-overlay/calendar-ico.svg">Календарь</a></li>
+                <li ><a class="menu__item" href="#"><img class="menu__item-indicator" src="media/mobile/left-menu-overlay/table-ico.svg">Доска</a></li>
+                <li ><a class="menu__item" href="#"><img class="menu__item-indicator" src="media/mobile/left-menu-overlay/chart-gant-ico.svg">Гант</a></li>
+                <li ><a class="menu__item" href="#"><img class="menu__item-indicator" src="media/mobile/left-menu-overlay/user-ico.svg">Команда</a></li>
+                <li ><a class="menu__item" href="#"><img class="menu__item-indicator" src="media/mobile/left-menu-overlay/stat-ico.svg">Отчеты</a></li>
+            </ul>
+        </nav>
+        <nav class="menu left-menu-overlay__bottom-menu">
+            <ul>
+                <li><a class="menu__item" href="#"><img class="menu__item-indicator" src="media/mobile/left-menu-overlay/settings-ico1.svg">Настройки</a></li>
+                <li ><a class="menu__item" href="#"><img class="menu__item-indicator" src="media/mobile/left-menu-overlay/help-ico.svg">Справка</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="side-overlay right-menu-overlay right-menu-overlay--disabled">
+        <div class="profile-button">
+            <img src="media/mobile/header/header-avatar1.png" alt="" class="profile-button__avatar">
+            <div class="profile-button__text-block">
+                <span>Арсений Шибаев</span>
+                <span class="profile-button__nickname">latrisu</span>
+            </div>
+        </div>
+        <nav class="menu left-menu-overlay__bottom-menu">
+            <ul>
+                <li><a class="menu__item" href="#"><img class="menu__item-indicator" src="media/mobile/right-menu-overlay/edit-icp.svg">Редактировать</a></li>
+                <li ><a class="menu__item" href="#"><img class="menu__item-indicator" src="media/mobile/right-menu-overlay/bell-ico.svg">Уведомления <div class="counter counter--type--red">5</div></a></li>
+                <li ><a class="menu__item" href="#"><img class="menu__item-indicator" src="media/mobile/right-menu-overlay/exit-ico.svg">Выйти</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header-main-overlay header-main-overlay--disabled">
+        <button class="active-button header-main-overlay__button button">Разработка приложения для Андроид</button>
+        <button class="header-main-overlay__button button">Готовка тортика</button>
+        <button class="header-main-overlay__button button">Написание дипломной работы</button>
+        <button class="gray-button header-main-overlay__button button"><img class="gray-button__indicator" src="media/mobile/header/bars-ico.svg" alt="">Управление проектами</button>
+    </div>
+    <header class="header">
+        <button class="header__button header__button--type--menu"></button>
+        <div class="header__button header__button--type--project-select">
+            <span class="header__span">Разработка приложения для Андроид</span>
+        </div>
+        <button class="header__button header__button--type--profile"></button>
+    </header>
+    <div class="filters">
+        <div class="filters__item filters__item--type--sort">
+            <span>По дедлайну</span>
+            <img class="filters__indicator" src="media/common/filters/chevron-down.svg" alt="">
+        </div>
+        <div class="filters__item filters__item--type--filt-menu">
+            <span>Фильтры</span>
+            <div class="counter filters__indicator">
+                <span class="counter__number">2</span>
+            </div>
+        </div>
+        <div class="filters__item filters__item--type--search">
+            <img class="filters__indicator--position--right" src="media/common/filters/magnifying-glass.svg" alt="">
+            <span>Поиск</span>
+        </div>
+    </div>
+    <div class="task task--big">
+        <span class="task__heading task__heading--big-task">Подготовить презентацию для потенциальных клиентов</span>
+        <div class="task__bottom-block">
+            <div class="task__details">
+                <div class="task__members">
+                    <div class="avatars-stack">
+                        <img src="media/common/avatars/avatar1.png" class="avatars-stack__item"></img>
+                        <img src="media/common/avatars/avatar2.png" class="avatars-stack__item"></img>
+                    </div>
+                    <span class="task__number-of-members">5 участников</span>
+                </div>
+                <div class="task__desc-block">
+                    <div class="task__desc-item">
+                        <img class="task__desc-ico" src="media/common/task/time-ico.svg" alt="" class="task__desc-indicator">
+                        <span class="task__desc-span" >Осталось 4 дня</span>
+                    </div>
+                    <div class="task__desc-item">
+                        <img class="task__desc-ico task__desc-ico--last" src="media/common/task/hashtag-ico.svg" alt="" class="task__desc-indicator">
+                        <span class="task__desc-span" >дизайн презентации корпоративный стиль</span>
+                    </div>
+                </div>
+            </div>
+            <div class="task__checkbox task__checkbox--noactive task__checkbox--big">
+                <img class="task__check-ico" src="media/common/task/check-ico.svg" alt="ОК">
+            </div>
+        </div>
+    </div>
+    <div class="task task--big">
+        <span class="task__heading task__heading--big-task">Подготовить презентацию для потенциальных клиентов</span>
+        <div class="task__bottom-block">
+            <div class="task__details">
+                <div class="task__members">
+                    <div class="avatars-stack">
+                        <img src="media/common/avatars/avatar1.png" class="avatars-stack__item"></img>
+                        <img src="media/common/avatars/avatar2.png" class="avatars-stack__item"></img>
+                        <img src="media/common/avatars/avatar3.png" class="avatars-stack__item"></img>
+                    </div>
+                    <span class="task__number-of-members">5 участников</span>
+                </div>
+                <div class="task__desc-block">
+                    <div class="task__desc-item">
+                        <img class="task__desc-ico" src="media/common/task/time-ico.svg" alt="" class="task__desc-indicator">
+                        <span class="task__desc-span" >Осталось 4 дня</span>
+                    </div>
+                </div>
+            </div>
+            <div class="task__checkbox task__checkbox--noactive task__checkbox--big">
+                <img class="task__check-ico" src="media/common/task/check-ico.svg" alt="ОК">
+            </div>
+        </div>
+    </div>
+    <div class="task task--small">
+        <div class="task__bottom-block task__bottom-block--small ">
+            <span class="task__heading task__heading--small-task">Подготовить презентацию для потенциальных клиентов</span>
+            <div class="task__details">
+                <div class="task__members">
+                    <div class="avatars-stack">
+                        <img src="media/common/avatars/avatar1.png" class="avatars-stack__item"></img>
+                        <img src="media/common/avatars/avatar2.png" class="avatars-stack__item"></img>
+                        <img src="media/common/avatars/avatar3.png" class="avatars-stack__item"></img>
+                    </div>
+                    <span class="task__number-of-members">5 участников</span>
+                </div>
+                <!--<div class="task__desc-block">
+                    <div class="task__desc-item">
+                        <img class="task__desc-ico" src="media/common/task/time-ico.svg" alt="" class="task__desc-indicator">
+                        <span class="task__desc-span" >Осталось 4 дня</span>
+                    </div>
+                    <div class="task__desc-item">
+                        <img class="task__desc-ico task__desc-ico--last" src="media/common/task/hashtag-ico.svg" alt="" class="task__desc-indicator">
+                        <span class="task__desc-span" >дизайн презентации корпоративный стиль</span>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+        <div class="task__checkbox task__checkbox--noactive">
+            <img class="task__check-ico" src="media/common/task/check-ico.svg" alt="ОК">
+        </div>
+    </div>
+    <div class="task task--small">
+        <div class="task__bottom-block task__bottom-block--small ">
+            <span class="task__heading task__heading--small-task">Подготовить презентацию для потенциальных клиентов</span>
+            <div class="task__details">
+                <!--<div class="task__members">
+                    <div class="avatars-stack">
+                        <img src="media/common/avatars/avatar1.png" class="avatars-stack__item"></img>
+                        <img src="media/common/avatars/avatar2.png" class="avatars-stack__item"></img>
+                        <img src="media/common/avatars/avatar3.png" class="avatars-stack__item"></img>
+                    </div>
+                    <span class="task__number-of-members">5 участников</span>
+                </div>-->
+                <div class="task__desc-block">
+                    <!--<div class="task__desc-item">
+                        <img class="task__desc-ico" src="media/common/task/time-ico.svg" alt="" class="task__desc-indicator">
+                        <span class="task__desc-span" >Осталось 4 дня</span>
+                    </div>-->
+                    <div class="task__desc-item">
+                        <img class="task__desc-ico task__desc-ico--last" src="media/common/task/hashtag-ico.svg" alt="" class="task__desc-indicator">
+                        <span class="task__desc-span" >дизайн презентации корпоративный стиль</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="task__checkbox task__checkbox--noactive">
+            <img class="task__check-ico" src="media/common/task/check-ico.svg" alt="ОК">
+        </div>
+    </div>
+    <div class="task task--big">
+        <span class="task__heading task__heading--big-task">Подготовить презентацию для потенциальных клиентов</span>
+        <div class="task__bottom-block task__bottom-block--big ">
+            <div class="task__details">
+                <!--<div class="task__members">
+                    <div class="avatars-stack">
+                        <img src="media/common/avatars/avatar1.png" class="avatars-stack__item"></img>
+                        <img src="media/common/avatars/avatar2.png" class="avatars-stack__item"></img>
+                        <img src="media/common/avatars/avatar3.png" class="avatars-stack__item"></img>
+                    </div>
+                    <span class="task__number-of-members">5 участников</span>
+                </div>-->
+                <div class="task__desc-block">
+                    <div class="task__desc-item">
+                        <img class="task__desc-ico" src="media/common/task/time-ico.svg" alt="" class="task__desc-indicator">
+                        <span class="task__desc-span" >Осталось 4 дня</span>
+                    </div>
+                    <div class="task__desc-item">
+                        <img class="task__desc-ico task__desc-ico--last" src="media/common/task/hashtag-ico.svg" alt="" class="task__desc-indicator">
+                        <span class="task__desc-span" >дизайн презентации корпоративный стиль</span>
+                    </div>
+                </div>
+            </div>
+            <div class="task__checkbox task__checkbox--noactive task__checkbox--big">
+                <img class="task__check-ico" src="media/common/task/check-ico.svg" alt="ОК">
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/mobile/header.js"></script>
+</body>
+</html>

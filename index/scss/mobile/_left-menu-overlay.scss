@@ -1,0 +1,32 @@
+/* Левый overlay мобильной версии */
+
+@import '_side-overlay.scss';
+
+.left-menu-overlay {
+    padding: 3rem 0 3rem 5rem;
+}
+
+.left-menu-overlay--enabled {
+    left: 0;
+}
+
+.left-menu-overlay--disabled {
+    left: -$side-overlay-width;
+}
+
+.left-menu-overlay__logo {
+    width: 10.9rem;
+    margin-bottom: 0.1rem;
+    margin-left: 1.5rem;
+}
+
+.left-menu-overlay__version-desc {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 4rem;
+    margin-left: 1.5rem;
+}
+
+.left-menu-overlay__bottom-menu {
+    margin-top: 4rem;
+}

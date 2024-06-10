@@ -1,0 +1,33 @@
+/* Оверлей выбора проекта */
+@import '_side-overlay.scss';
+
+.header-main-overlay {
+    position: absolute;
+    width: 39rem;
+    height: 22.9rem;
+    background-color: #FFFFFF;
+    box-shadow: $main-inteface-box-shadow;
+    border-radius: 0 0 $header-border-radius $header-border-radius;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.2rem;
+    transition: top 0.4s ease-in;
+    z-index: 100;
+}
+
+.header-main-overlay__button {
+    width: 35rem;
+    height: 3.8rem;
+    //margin-bottom: 1.3rem;
+}
+
+.header-main-overlay--disabled {
+    top: -22.9rem;
+}
+
+.header-main-overlay--enabled {
+    top: 0;
+}

@@ -1,0 +1,35 @@
+
+/* Фильтры */
+
+.filters {
+    width: 37rem;
+    height: 5rem;
+    padding: 0.9rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.9rem auto 2.1rem;
+}
+
+.filters__item {
+    width: fit-content;
+    height: 100%;
+    border: $gray1 0.5px solid;
+    border-radius: $button-border-radius2;
+    font-size: 1.4rem;
+    letter-spacing: -1px;
+    color: $gray2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0.7rem 1.5rem;
+}
+
+.filters__indicator {
+    margin-left: 0.6rem;
+}
+
+.filters__indicator--position--right {
+    margin-right: 0.6rem;
+}

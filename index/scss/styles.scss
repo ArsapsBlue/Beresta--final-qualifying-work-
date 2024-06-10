@@ -1,0 +1,70 @@
+/*Файл для глобальных стилей и подключения блоков из других SCSS файлов*/
+
+/* Основные параметры */
+
+@import 'properties.scss';
+
+/* Общие стили */
+
+@import 'common/filters.scss';
+@import 'common/counter.scss';
+@import 'common/task.scss';
+@import 'common/avatars-stack.scss';
+@import 'common/button.scss';
+@import 'common/menu.scss';
+@import 'common/profile-button.scss';
+
+/* Мобильные стили (часть свойств присутствует в общем разделе в media запросах) */
+
+@import 'mobile/header.scss';
+@import 'mobile/header-main-overlay.scss';
+@import 'mobile/header-background-overlay.scss';
+@import 'mobile/left-menu-overlay.scss';
+@import 'mobile/side-overlay.scss';
+@import 'mobile/right-menu-overlay.scss';
+@import 'mobile/create-button.scss';
+
+
+
+/* Глобальные основные параметры */
+
+* {
+    box-sizing: border-box;
+    font-family: $main-font-family;
+    font-weight: 500;
+}
+
+span, p {
+    font-family: $main-font-family;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    cursor: default;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px; // для задания величины 1 rem
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+

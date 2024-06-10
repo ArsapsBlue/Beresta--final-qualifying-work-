@@ -1,0 +1,18 @@
+/* Стак аватарок */
+
+.avatars-stack {
+    width: fit-content;
+    height: 1.671rem;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    padding: 0 0.1rem;
+}
+
+.avatars-stack__item {
+    width: 1.671rem;
+    height: 1.671rem;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-right: -0.4rem;
+}
