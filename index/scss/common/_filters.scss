@@ -11,6 +11,18 @@
     margin: 0.9rem auto 2.1rem;
 }
 
+.filters--desktop {
+    padding: 0;
+    height: 3.2rem;
+    margin: 0;
+    width: fit-content;
+}
+
+.filters__item--desktop {
+    margin-right: 0.6rem;
+}
+
+
 .filters__item {
     width: fit-content;
     height: 100%;
@@ -24,6 +36,24 @@
     justify-content: space-between;
     text-align: center;
     padding: 0.7rem 1.5rem;
+    transition: background-color 0.2s ease-out, border 0.2s ease-out;
+}
+
+.filters__item--action-button {
+    color: $green2;
+    border: $active-color1 1.6px solid;
+    border-radius: 1.6rem;
+    padding: 0.7rem 3.5rem;
+    letter-spacing: 0;
+}
+
+.filters__item--active {
+    border: $active-color1 1.6px solid;
+    color: $green2;
+}
+
+.filters__item:hover {
+    background-color: $graylight;
 }
 
 .filters__indicator {

@@ -1,0 +1,10 @@
+/* Основной декстопный контейнер */
+
+.mainDesktopContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    overflow-x: hidden;
+}

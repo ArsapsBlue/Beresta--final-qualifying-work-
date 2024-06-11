@@ -1,0 +1,79 @@
+/* Параметр в форме или анкете */
+
+.param {
+    width: 100%;
+    height: fit-content;
+    //min-height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.param__ico {
+    height: 3.2rem;
+    width: 4rem;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+
+.param__ico--none {
+    
+}
+
+
+
+.param__content {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+}
+
+.param__content--task-details-ver {
+    width: 22.8rem;
+    padding: 0 1.6rem;
+}
+
+
+.param__edit {
+    width: 1.598rem;
+    height: 1.598rem;
+    background: url('media/common/param/edit_ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.param__edit--down {
+    margin-top: 2.2rem;
+}
+
+.param__delete {
+    width: 1.3rem;
+    height: 1.8rem;
+    background: url('media/common/list/xmark-ico.svg') no-repeat center;
+    background-size: contain;
+    align-self: center;
+}
+
+.param__edit--none {
+    background: none;
+}
+
+.param__desc {
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+}
+
+.param__value {
+    font-size: 1.7rem;
+}
+
+.param__tag {
+    display: inline-block;
+    background-color: $green1;
+    border-radius: 0.3rem;
+    padding: 0.5rem 0.8rem;
+    margin-right: 0.8rem;
+    margin-top: 0.8rem;
+}

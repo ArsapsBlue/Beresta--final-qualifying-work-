@@ -1,0 +1,19 @@
+/* Карточка проекта */
+
+.card {
+    padding: 2.5rem 2rem 2rem 2.3rem;
+    box-shadow: $card-box-shadow;
+    background-color: #FFFFFF;
+    border-radius: $card-border-radius;
+    width: 34.8rem;
+    height: fit-content;
+    margin: 0 auto 1.8rem;
+}
+
+.card__item {
+    margin-bottom: 3rem;
+}
+
+.card__button {
+    padding: 1.2rem 0;
+}

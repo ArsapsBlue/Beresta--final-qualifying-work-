@@ -1,0 +1,10 @@
+/* Блок с кнопками */
+
+.button-block {
+    width: 100%;
+    height: 3.3rem;
+    min-height: 3.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

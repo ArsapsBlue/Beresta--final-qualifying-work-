@@ -3,7 +3,7 @@
 
 .header-main-overlay {
     position: absolute;
-    width: 39rem;
+    width: 100vw;
     height: 22.9rem;
     background-color: #FFFFFF;
     box-shadow: $main-inteface-box-shadow;
@@ -13,7 +13,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    padding: 2.2rem;
+    padding: 2.2rem 0 2.2rem 0;
     transition: top 0.4s ease-in;
     z-index: 100;
 }

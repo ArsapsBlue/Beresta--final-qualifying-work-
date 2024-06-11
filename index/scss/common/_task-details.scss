@@ -1,0 +1,64 @@
+/* Стили для окна с обзором задачи */
+
+.task-details {
+/* :) */
+}
+
+
+.task-details__item {
+    margin: 0 auto 2.7rem;
+    max-width: 32.5rem;
+    min-width: 31rem;
+}
+
+.task-details__button-block {
+    width: 32rem;
+}
+
+.task-details__button-block--main {
+    padding: 0 1.5rem;
+}
+
+.task-details__button-block-button {
+    width: 14rem;
+    font-size: 1.2rem;
+}
+
+.task-details__button-block--gray {
+    justify-content: end;
+    padding-right: 0;
+}
+
+
+.task-details__button--gray {
+    justify-self: flex-end;
+    font-size: 1.7rem;
+    padding-right: 0;
+}
+
+.task-details__button-indicator {
+    margin-left: 1rem;
+}
+
+.task-details__description {
+    display: -webkit-box;
+    width: 100%;
+    height: fit-content;
+    font-size: 1.5rem;
+    overflow: hidden;
+    display: block;
+    //white-space: normal;
+    overflow: hidden;
+    word-wrap: normal;
+    overflow-wrap: normal;
+    text-overflow: ellipsis;
+    text-align: center;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.task-details__description--small {
+    color: $gray3;
+    font-size: 1.2rem;
+}

@@ -31,6 +31,7 @@
     font-size: 1.7rem;
     margin-bottom: 1rem;
     -webkit-box-orient: vertical;
+    word-break: break-all;
 }
 
 .task__heading--small-task {
@@ -121,18 +122,18 @@
     filter: blur(0.5px);
     border: $gray1 solid 1px;
     border-radius: 50%;
-    transition: filter ease-in 0.3s, background-color ease-in 0.3s;
+    transition: filter ease-in 0.1s, background-color ease-in 0.1s;
     background-color: #FFFFFF;
-    z-index: -50;
+    z-index: 50;
 }
 
-.task__checkbox:hover {
-    cursor: pointer;
-}
 
 .task__checkbox--active {
-    background-color: $active-color1;
+    background: $active-color1 url("media/common/task/check-ico-white.svg") no-repeat center;
+    background-size: 2rem;
+    filter: none;
     .task__check-ico {
+        display: none;
         width: 2rem;
         height: 2rem;
         object-fit: contain;
@@ -142,6 +143,11 @@
 .task__checkbox--noactive:hover {
     filter: none;
     background-color: $graylight;
+}
+
+.task__checkbox--active:hover {
+    background: $active-color1 url("media/common/task/check-ico-white.svg") no-repeat center;
+    background-size: 2rem;
 }
 
 .task__checkbox--big {

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">-->
+    <title>Beresta</title>
+</head>
+<body>
+    <script src="js/common/password-check.js"></script>
+    <div class="enter-container enter-container--auth enter-container-disabled">
+        <img src="media/common/logo/beresta-logo-auth.png" class="enter-container__logo"></img>
+        <form class="auth-block">
+            <span class="auth-block__heading heading auth-block__heading--big">Вход</span>
+            <input placeholder="Логин" class="input auth-block__input" type="text" name="login"  required />
+            <input placeholder="Пароль" class="input auth-block__input" type="password" name="password"  required />
+            <div class="button-block auth-block__button-block">
+                <button class="button auth-block__button auth-block__button--left button--border--green task-details__button-block-button">У меня нет аккаунта</button>
+                <button class="button auth-block__button auth-block__button--right button--active task-details__button-block-button">Войти</button>
+            </div>
+            <div class="button-block auth-block__button-block auth-block__button-block--add">
+                <button class="button auth-block__button button--just-green task-details__button-block-button">Восстановление доступа</button>
+            </div>
+        </form>
+    </div>
+    <div class="enter-container enter-container--recovery enter-container-disabled">
+        <img src="media/common/logo/beresta-logo-auth.png" class="enter-container__logo"></img>
+        <form class="auth-block">
+            <span class="auth-block__heading heading auth-block__heading--small">Введите адрес электронной почты, приклепленной к вашему аккаунту</span>
+            <input placeholder="Электронная почта" class="input auth-block__input" type="email" name="email" required />
+            <div class="button-block auth-block__button-block">
+                <button class="button auth-block__button auth-block__button--left button--border--green task-details__button-block-button">Назад</button>
+                <button class="button auth-block__button auth-block__button--right button--active task-details__button-block-button">Отправить</button>
+            </div>
+        </form>
+    </div>
+    <div class="enter-container enter-container--register enter-container-enabled">
+        <img src="media/common/logo/beresta-logo-auth.png" class="enter-container__logo"></img>
+        <form onsubmit="return validate();" class="auth-block" id="password-create">
+            <span class="enter-container__item--step1 auth-block__heading heading auth-block__heading--small">Придумайте логин и введите адрес своей электронной почты</span>
+            <input placeholder="Логин" class="enter-container__item--step1 input auth-block__input" type="text" name="login" required />
+            <input placeholder="Электронная почта" class="enter-container__item--step1 input auth-block__input" type="email" name="email" required />
+            <span class="enter-container__item--step2 auth-block__heading heading auth-block__heading--small">Введите свое имя и фамилию, чтобы вас могли найти коллеги</span>
+            <input placeholder="Имя" class="enter-container__item--step2 input auth-block__input" type="text" name="first-name"/>
+            <input placeholder="Фамилия" class="enter-container__item--step2 input auth-block__input" type="text" name="last-name" />
+            <span class="enter-container__item--step3 auth-block__heading heading auth-block__heading--small">Придумайте надежный пароль</span>
+            <div class="enter-container__item--step3 password-check">
+                <div class="password-check__item" id="lenght-check">
+                    <img  id="lenght-check-incorrect" src="media/common/password-check/incorrect-ico.svg" class="password-check__indicator password-check__indicator--enabled"></img>
+                    <img  id="lenght-check-correct" src="media/common/password-check/correct-ico.svg" class="password-check__indicator"></img>
+                    <span>Больше 10 символов</span>
+                </div>
+                <div class="password-check__item" id="digit-check">
+                    <img  id="digit-check-incorrect" src="media/common/password-check/incorrect-ico.svg" class="password-check__indicator password-check__indicator--enabled"></img>
+                    <img  id="digit-check-correct" src="media/common/password-check/correct-ico.svg" class="password-check__indicator"></img>
+                    <span>Хотя бы 1 цифра</span>
+                </div>
+                <div class="password-check__item">
+                    <img  id="small-char-check-incorrect" src="media/common/password-check/incorrect-ico.svg" class="password-check__indicator password-check__indicator--enabled"></img>
+                    <img  id="small-char-check-correct" src="media/common/password-check/correct-ico.svg" class="password-check__indicator"></img>
+                    <span>Хотя бы 1 строчная буква</span>
+                </div>
+                <div class="password-check__item" id="big-char-check">
+                    <img  id="big-char-check-incorrect" src="media/common/password-check/incorrect-ico.svg" class="password-check__indicator password-check__indicator--enabled"></img>
+                    <img  id="big-char-check-correct" src="media/common/password-check/correct-ico.svg" class="password-check__indicator"></img>
+                    Хотя бы 1 прописная буква
+                </div>
+                <div class="password-check__item" id="spec-symbol-check">
+                    <img  id="spec-symbol-check-incorrect" src="media/common/password-check/incorrect-ico.svg" class="password-check__indicator password-check__indicator--enabled"></img>
+                    <img  id="spec-symbol-check-correct" src="media/common/password-check/correct-ico.svg" class="password-check__indicator"></img>
+                    <span>Хотя бы 1 специальный символ</span>
+                </div>
+                <div class="password-check__item" id="repeat-check">
+                    <img  id="repeat-check-incorrect" src="media/common/password-check/incorrect-ico.svg" class="password-check__indicator password-check__indicator--enabled"></img>
+                    <img  id="repeat-check-correct" src="media/common/password-check/correct-ico.svg" class="password-check__indicator"></img>
+                    <span>Повтор пароля верный</span>
+                </div>
+            </div>
+            <input  autocomplete="new-password" placeholder="Пароль" class="enter-container__item--step3 input auth-block__input" type="password" name="password" id="password-check" oninput="checkPassword()" required/>
+            <input autocomplete="new-password" placeholder="Пароль еще раз" class="enter-container__item--step3 input auth-block__input" type="password" name="password-repeat" id="password-check-repeat" oninput="passwordRepeatCheck ()" required />
+            <div class="button-block auth-block__button-block">
+                <button class="button auth-block__button auth-block__button--left button--border--green task-details__button-block-button" id="leftButton" onclick="changeStep(-1);">Назад</button>
+                <button class="button auth-block__button auth-block__button--right button--active task-details__button-block-button" type="submit" id="rightButton" onclick="changeStep(1)">Далее</button>
+            </div>
+        </form>
+    </div>
+    <div class="s-alert">Пароли не совпадают</div>
+    <span class="enter-container__description">Береста 1.0<br>Арсений Шибаев</span>
+    <script src="js/common/register-form-control.js" ></script>
+    <script src="js/common/s-alert.js"></script>
+</body>
+</html>
+

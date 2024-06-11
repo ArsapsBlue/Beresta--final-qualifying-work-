@@ -1,0 +1,150 @@
+/* Настройки разметки основного десктопного блока */
+
+
+$main-col__second-row-height: 16rem;
+$main-col__header-height: 8.9rem;
+
+.main-col {
+    width: 100%;
+    height: 100vh;
+}
+
+.main-col__header {
+    width: 100%;
+    height: $main-col__header-height;
+    //box-shadow: $main-inteface-box-shadow;
+    z-index: 50;
+    border-bottom: 1px solid $gray1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.7rem 0 4.7rem;
+}
+
+.main-col__search {
+    border-radius: 2.5rem;
+    max-height: 100%;
+}
+
+.main-col__right-header-block {
+    width: 70.5rem;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-col__right-header-block-button {
+    width: 17rem;
+    border-radius: 2.5rem;
+    height: 5rem;
+
+}
+
+.main-col__bell-button {
+    width: 5rem;
+    position: relative;
+}
+
+.main-col__bell-button-counter {
+    position: absolute;
+    bottom:1rem;
+    right: 0.5rem;
+}
+
+.main-col__bell-button-counter--disabled {
+    display: none;
+}
+
+.main-col__profile-button {
+    width: fit-content;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2.5rem;
+}
+
+
+
+.main-col__profile-button:hover {
+    background-color: $graylight;
+}
+
+.main-col__profile-button-avatar {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.main-col__profile-button-text {
+    margin-left: 1rem;
+    margin-right: 1.3rem;
+    max-width: 20rem;
+    min-width: 17rem;
+}
+
+.main-col__profile-button-text-up {
+    font-size: 1.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-wrap: break-word;
+}
+
+.main-col__profile-button-text-down {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+
+.main-col__second-row {
+    padding: 0 6.3rem 0 5rem;
+    width: 100%;
+    height: $main-col__second-row-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-col__second-row-special-ico {
+    margin-right: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+.main-col__main-row {
+    padding: 2rem 5rem 0 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+    gap: 1rem;
+
+    @media (min-width: 75rem) {
+        grid-template-columns: repeat(auto-fit, 35rem);
+         gap: 2rem;
+    }
+
+    width: 100%;
+    overflow-y: scroll;
+    height: calc(100vh - ($main-col__header-height + $main-col__second-row-height));
+    --scrollbar-foreground: #999;
+    --scrollbar-background: transparent;
+    --scrollbar-size: 5px;
+    scrollbar-color: var(--scrollbar-foreground) var(--scrollbar-background);
+}
+
+.main-col__main-row--side-overlay-place {
+    width: 67%;
+}
+
+
+.main-col__main-row ::-webkit-scrollbar {
+    width: var(--scrollbar-size); 
+  }
+  .main-col__main-row ::-webkit-scrollbar-thumb { /* плашка-бегунок */
+    background: var(--scrollbar-foreground); /* фон */
+  }
+  .main-col__main-row ::-webkit-scrollbar-track { /* фон */
+    background: var(--scrollbar-background);
+  }

@@ -17,3 +17,20 @@ $side-overlay-width: 26rem;
     transition: left 0.4s ease-in, right 0.4s ease-in;
     z-index: 100;
 }
+
+.side-overlay--desktop {
+    top: 20rem;
+    right: -39rem;
+    width: 39rem !important;
+    height: calc(100vh - 20rem);
+    border-radius: $card-border-radius 0 0 $card-border-radius;
+}
+
+.side-overlay--desktop--enabled {
+    right: 0;
+}
+
+.side-overlay__close-button {
+    margin-bottom: -3rem;
+    z-index: 200;
+}

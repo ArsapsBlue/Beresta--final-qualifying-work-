@@ -58,7 +58,7 @@ document.querySelector('.left-menu-overlay .menu__item--enabled').addEventListen
     closeOverlay(leftOverlay);
 });
 
-document.querySelector('.header-main-overlay .active-button').addEventListener('click', function() {
+document.querySelector('.header-main-overlay .button--active').addEventListener('click', function() {
     closeOverlay(mainOverlay);
 });
 

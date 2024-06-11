@@ -1,0 +1,17 @@
+/* Шрифты */
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"),
+      local("Montserrat"),
+      url("index/fonts/Montserrat-VariableFont_wght.ttf") format("ttf");
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat Italic"),
+      local("Montserrat-Italic"),
+      url("index/fonts/Montserrat-Italic-VariableFont_wght.ttf") format("ttf");
+    font-style: italic;
+  }

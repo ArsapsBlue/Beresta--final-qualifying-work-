@@ -10,16 +10,40 @@
     overflow: hidden;
     line-clamp: 1;
     border-radius: $button-border-radius1;
+    height: 100%;
+    max-height: 5rem;
+    padding: 0 1.4rem;
+    transition: background-color 0.2s ease-out;
 }
 
-.active-button {
+.button--no-padding {
+    padding: 0;
+}
+
+.button--active, .active-button {
     background-color: $active-color1;
 }
 
-.gray-button {
+.button--gray, .gray-button {
     color: $gray2;
 }
 
-.gray-button__indicator {
+.button--just-green {
+    border: none;
+    color: $green2;
+}
+
+.button__indicator, .gray-button__indicator {
     margin-right: 1.5rem;
+    width: 2.1rem;
+    max-height: 2.1rem;
+    object-fit: contain;
+}
+
+.button--border--green {
+    border: $active-color1 1px solid;
+}
+
+.button:hover {
+    background-color: $graylight;
 }

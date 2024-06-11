@@ -7,6 +7,10 @@
     width: 18.2rem;
 }
 
+.menu--special {
+    width: 100%;
+}
+
 .menu__item {
     width: 100%;
     height: 4.6rem;
@@ -17,6 +21,24 @@
     border-radius: $button-border-radius1;
     margin-bottom: 1rem;
     font-size: 1.5rem;
+    transition: background-color 0.2s ease-out;
+}
+
+.menu__item--special {
+    height: fit-content;
+    font-size: 1.2rem;
+}
+
+.menu--scrollable {
+    overflow-y: scroll;
+}
+
+.menu__item:hover {
+    background-color: $graylight;
+}
+
+.menu__item--enabled:hover {
+    background-color: $active-color1;
 }
 
 .menu__item--enabled {
@@ -28,4 +50,16 @@
     height: 1.8rem;
     width: 1.8rem;
     object-fit: contain;
+}
+
+.menu__item-indicator--no-margin {
+    margin-right: 0;
+}
+
+.menu__line {
+    //margin-right: 5rem;
+    margin: 2rem 0;
+    width: 17rem;
+    height: 1px;
+    background-color: $gray1;
 }

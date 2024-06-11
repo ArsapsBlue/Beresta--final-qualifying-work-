@@ -1,0 +1,55 @@
+/* Контейнер для меню входа и регистрации */
+
+.enter-container {
+    position: relative;
+    margin: 3rem auto;
+    min-width: 33rem;
+    max-width: 40rem;
+    min-height: 60rem;
+    max-height: 70rem;
+    background-color: #FFFFFF;
+    border-radius: $card-border-radius;
+    padding-top: 7.9rem;
+}
+
+.enter-container__logo {
+    width: 14.3rem;
+    height: 3.8rem;
+    display: block;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.enter-container__item {
+
+}
+
+.enter-container__item--disabled {
+    display: none;
+}
+
+.enter-container__item--step3 {
+
+}
+
+.enter-container__description {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    font-size: 1.3rem;
+    color: $gray3;
+    bottom: 2.5rem;
+    width: 100%;
+}
+
+.enter-container--desktop {
+    box-shadow: $card-box-shadow;
+}
+
+.enter-container-enabled {
+    display: block;
+}
+
+.enter-container-disabled {
+    display: none;
+}

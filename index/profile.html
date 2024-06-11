@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">-->
+    <title>Beresta</title>
+</head>
+<body>
+    <div class="header-background-overlay header-background-overlay--disabled"></div>
+    <div class="side-overlay left-menu-overlay left-menu-overlay--disabled">
+        <img src="media/common/logo/beresta-logo-main.png" alt="" class="left-menu-overlay__logo">
+        <span class="left-menu-overlay__version-desc">Береста, версия 1.0</span>
+        <nav class="menu">
+            <ul>
+                <li><a class="menu__item menu__item--enabled" href="#"><img class="menu__item-indicator" src="media/mobile/left-menu-overlay/list-ico.svg">Список</a></li>
+                <li ><a class="menu__item" href="#"><img class="menu__item-indicator" src="media/mobile/left-menu-overlay/calendar-ico.svg">Календарь</a></li>
+                <li ><a class="menu__item" href="#"><img class="menu__item-indicator" src="media/mobile/left-menu-overlay/table-ico.svg">Доска</a></li>
+                <li ><a class="menu__item" href="#"><img class="menu__item-indicator" src="media/mobile/left-menu-overlay/chart-gant-ico.svg">Гант</a></li>
+                <li ><a class="menu__item" href="#"><img class="menu__item-indicator" src="media/mobile/left-menu-overlay/user-ico.svg">Команда</a></li>
+                <li ><a class="menu__item" href="#"><img class="menu__item-indicator" src="media/mobile/left-menu-overlay/stat-ico.svg">Отчеты</a></li>
+            </ul>
+        </nav>
+        <nav class="menu left-menu-overlay__bottom-menu">
+            <ul>
+                <li><a class="menu__item" href="#"><img class="menu__item-indicator" src="media/mobile/left-menu-overlay/settings-ico1.svg">Настройки</a></li>
+                <li ><a class="menu__item" href="#"><img class="menu__item-indicator" src="media/mobile/left-menu-overlay/help-ico.svg">Справка</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="side-overlay right-menu-overlay right-menu-overlay--disabled">
+        <div class="profile-button">
+            <img src="media/mobile/header/header-avatar1.png" alt="" class="profile-button__avatar">
+            <div class="profile-button__text-block">
+                <span>Арсений Шибаев</span>
+                <span class="profile-button__nickname">latrisu</span>
+            </div>
+        </div>
+        <nav class="menu left-menu-overlay__bottom-menu">
+            <ul>
+                <li><a class="menu__item" href="#"><img class="menu__item-indicator" src="media/mobile/right-menu-overlay/edit-icp.svg">Редактировать</a></li>
+                <li ><a class="menu__item" href="#"><img class="menu__item-indicator" src="media/mobile/right-menu-overlay/bell-ico.svg">Уведомления <div class="counter counter--type--red">5</div></a></li>
+                <li ><a class="menu__item" href="#"><img class="menu__item-indicator" src="media/mobile/right-menu-overlay/exit-ico.svg">Выйти</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header-main-overlay header-main-overlay--disabled">
+        <button class="button--active header-main-overlay__button button">Разработка приложения для Андроид</button>
+        <button class="header-main-overlay__button button">Готовка тортика</button>
+        <button class="header-main-overlay__button button">Написание дипломной работы</button>
+        <button class="button--gray header-main-overlay__button button"><img class="button__indicator" src="media/mobile/header/bars-ico.svg" alt="">Управление проектами</button>
+    </div>
+    <header class="header">
+        <button class="header__button header__button--type--menu"></button>
+        <div class="header__button header__button--type--project-select">
+            <span class="header__span">Разработка приложения для Андроид</span>
+        </div>
+        <button class="header__button header__button--type--profile"></button>
+    </header>   
+    <div class="main-mobile-container profile">
+        <img class="profile__avatar profile__item" src="media/common/avatars/avatar1.png" alt="">
+        <h2 class="heading profile__item profile__heading">Арсений Шибаев</h1>
+        <div class="button-block profile__button-block profile__item">
+            <button class="button button--border--green task-details__button-block-button">Изменить фото</button>
+        </div>
+        <div class="param profile__item">
+            <div class="param__content">
+                <span class="param__desc">Имя</span>
+                <span class="param__value" >Арсений</span>
+            </div>
+            <button class="param__edit param__edit--down"></button>
+        </div>
+        <div class="param profile__item">
+            <div class="param__content">
+                <span class="param__desc">Фамилия</span>
+                <span class="param__value" >Шибаев</span>
+            </div>
+            <button class="param__edit param__edit--down"></button>
+        </div>
+        <div class="param profile__item">
+            <div class="param__content">
+                <span class="param__desc">Логин</span>
+                <span class="param__value" >latrisu</span>
+            </div>
+            <button class="param__edit param__edit--none"></button>
+        </div>
+        <div class="param profile__item">
+            <div class="param__content">
+                <span class="param__desc">Электронная почта</span>
+                <span class="param__value" >arseniyshibaev@yandex.ru</span>
+            </div>
+            <button class="param__edit param__edit--down"></button>
+        </div>
+        <div class="param profile__item">
+            <div class="param__content">
+                <span class="param__desc">Пароль</span>
+                <span class="param__value" >•••••••••••••••••••</span>
+            </div>
+            <button class="param__edit param__edit--down"></button>
+        </div>
+        <div class="button-block profile__item">
+            <button class="button button--gray button--no-padding card__button">
+                <img src="media/common/card/trash-ico.svg" class="button__indicator">
+                Удалить аккаунт
+            </button>
+        </div>
+        
+    </div>
+
+    <script src="js/mobile/header.js"></script>
+</body>
+</html>

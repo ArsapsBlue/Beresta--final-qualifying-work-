@@ -1,0 +1,39 @@
+/* Перечисления */
+
+.list {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+
+.list__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.6rem;
+}
+
+.list__item--add-margin {
+    margin-top: 1.25rem;
+}
+
+.list__avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+.list__add-ico {
+    width: 2.1rem;
+    height: 2.1rem;
+    margin-right: 2.1rem;
+}
+
+.list__button--user-list {
+    margin-left: -5.4rem;
+    //min-width: 23rem;
+    //padding: 0;
+}

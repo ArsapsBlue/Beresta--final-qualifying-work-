@@ -1,0 +1,26 @@
+/* Особые параметры для страницы профиля */
+
+.profile {
+    padding: 2.8rem 0;
+}
+
+.profile__avatar {
+    width: 10.4rem;
+    height: 10.4rem;
+    border-radius: 50%;
+    display: block;
+}
+
+.profile__item {
+    margin: 0 auto 2rem;
+    max-width: 29rem;
+}
+
+.profile__button-block {
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.profile__heading {
+    
+}

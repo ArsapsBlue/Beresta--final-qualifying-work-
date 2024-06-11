@@ -1,0 +1,32 @@
+/* Поля для ввода и подобное */
+
+.input {
+    width: 33rem;
+    height: 5rem;
+    padding: 1.6rem 1.8rem;
+    font-size: 1.5rem;
+    border: $gray1 solid 1px;
+    border-radius: $button-border-radius1;
+}
+
+::-webkit-input-placeholder { 
+    color: $gray3;
+}
+:-moz-placeholder {
+    color: $gray3;
+   opacity:  1;
+}
+::-moz-placeholder { 
+    color: $gray3;
+   opacity:  1;
+}
+:-ms-input-placeholder {
+    color: $gray3;
+}
+::-ms-input-placeholder {
+    color: $gray3;
+}
+
+::placeholder { 
+    color: $gray3;
+}
